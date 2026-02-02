@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Taipan USA - Authentic Dim Sum & Bakery | Sacramento, CA",
   description: "Family-owned dim sum and bakery serving Sacramento's finest handcrafted dumplings, bao buns, and fresh baked goods daily. Traditional recipes since [year]. Order online for pickup or delivery.",
   keywords: ["dim sum", "bakery", "Sacramento", "Chinese food", "dumplings", "bao buns", "egg tarts"],
+  icons: {
+    icon: "/facicon.webp",
+    shortcut: "/facicon.webp",
+    apple: "/facicon.webp",
+  },
   openGraph: {
     title: "Taipan USA - Authentic Dim Sum & Bakery",
     description: "Sacramento's premier dim sum and bakery. Handcrafted with love daily.",

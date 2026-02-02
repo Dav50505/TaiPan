@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,7 +8,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 - Branding */}
           <div>
-            <h3 className="text-2xl font-bold text-amber-400 mb-3">TAIPAN</h3>
+            <div className="flex items-center mb-3">
+              <div className="relative w-16 h-16">
+                <Image
+                  src="/facicon.webp"
+                  alt="Taipan Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
             <p className="text-gray-400 mb-4">
               Sacramento&apos;s Premier Dim Sum & Bakery
             </p>

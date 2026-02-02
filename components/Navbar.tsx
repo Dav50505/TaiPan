@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -40,11 +41,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className={`text-2xl font-bold transition-colors ${
-              isScrolled || isLightBackgroundPage ? 'text-red-600' : 'text-white'
-            }`}>
-              TAIPAN
-            </span>
+            <div className="relative w-16 h-16">
+              <Image
+                src="/facicon.webp"
+                alt="Taipan Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}
