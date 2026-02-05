@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg-img/hero-img.webp"
-          alt="Delicious dim sum platter"
+          alt="Fresh handcrafted dim sum platter with steamed dumplings and bao buns at Taipan Dim Sum Sacramento"
           fill
           className="object-cover"
           priority

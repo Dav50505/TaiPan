@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   // Pages with light backgrounds need dark text always
-  const isLightBackgroundPage = pathname === '/menu' || pathname === '/about' || pathname === '/contact';
+  const isLightBackgroundPage = pathname === '/menu' || pathname === '/about' || pathname === '/contact' || pathname === '/faq' || pathname === '/sacramento-dim-sum' || pathname === '/blog' || pathname?.startsWith('/blog/');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +26,8 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'Menu', href: '/menu' },
     { label: 'About', href: '/about' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -44,7 +46,7 @@ export default function Navbar() {
             <div className="relative w-16 h-16">
               <Image
                 src="/facicon.webp"
-                alt="Taipan Logo"
+                alt="Taipan Dim Sum & Bakery logo"
                 fill
                 className="object-contain"
                 priority

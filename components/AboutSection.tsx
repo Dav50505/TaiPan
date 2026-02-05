@@ -53,37 +53,41 @@ export default function AboutSection() {
             <div className="relative h-72 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/Modern/Screenshot 2026-02-02 at 12.27.47 PM-optimized.jpg"
-                alt="Making dim sum"
+                alt="Authentic dim sum preparation in Taipan's Sacramento kitchen - handcrafted dumplings and bao buns made fresh daily"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
               />
             </div>
             <div className="relative h-72 rounded-lg overflow-hidden mt-8 shadow-lg">
               <Image
                 src="/Modern/Screenshot 2026-02-02 at 12.29.18 PM-optimized.jpg"
-                alt="Restaurant interior"
+                alt="Welcoming interior of Taipan Dim Sum restaurant on Freeport Boulevard Sacramento - family-friendly dining atmosphere"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
               />
             </div>
             <div className="relative h-72 rounded-lg overflow-hidden -mt-8 shadow-lg">
               <Image
                 src="/Modern/Screenshot 2026-02-02 at 12.29.38 PM-optimized.jpg"
-                alt="Fresh ingredients"
+                alt="Traditional bamboo steamers filled with fresh dumplings - classic Cantonese dim sum cooking method at Taipan"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
               />
             </div>
             <div className="relative h-72 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/Modern/Screenshot 2026-02-02 at 12.30.13 PM-optimized.jpg"
-                alt="Steaming dumplings"
+                alt="Steaming hot dim sum fresh from the kitchen at Taipan Sacramento - authentic Cantonese cuisine"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
               />
             </div>
           </motion.div>

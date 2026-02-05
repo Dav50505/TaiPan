@@ -15,7 +15,7 @@ export default function CTASection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg-img/hero-img.webp"
-          alt="Delicious dim sum platter"
+          alt="Assorted authentic dim sum spread at Taipan Sacramento - steamed dumplings, bao buns, and traditional Cantonese dishes"
           fill
           className="object-cover"
         />

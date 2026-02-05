@@ -85,9 +85,10 @@ export default function MenuPreview() {
               <div className="relative h-48">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  alt={`${item.name} - ${item.description} - authentic dim sum at Taipan Sacramento`}
                   fill
                   className="object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">

@@ -57,12 +57,12 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
       className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
     >
       <div className="relative h-80 overflow-hidden">
-        <Image
-          src={product.image}
-          alt={product.name}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
-        />
+          <Image
+            src={product.image}
+            alt={`${product.name} - fresh handmade dim sum at Taipan Sacramento on Freeport Boulevard`}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
+          />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
           <a
             href="https://www.doordash.com/store/taipan-dim-sum-&-bakery-sacramento-sacramento-37986657/86387556/?pickup=true"

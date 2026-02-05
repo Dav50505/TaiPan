@@ -1,14 +1,20 @@
 import Hero from '@/components/Hero';
 import FeaturedProducts from '@/components/FeaturedProducts';
 import AboutSection from '@/components/AboutSection';
+import HomeContent from '@/components/HomeContent';
 import MenuPreview from '@/components/MenuPreview';
 import Testimonials from '@/components/Testimonials';
 import LocationHours from '@/components/LocationHours';
 import CTASection from '@/components/CTASection';
 import type { Review, GooglePlacesResponse } from '@/types/reviews';
+import JsonLd, { buildRestaurantSchema, buildLocalBusinessSchema } from '@/components/seo/JsonLd';
+import { pageMetadata } from '@/components/seo/Meta';
 
 // Enable ISR with 24-hour revalidation
 export const revalidate = 86400; // 24 hours in seconds
+
+// SEO Metadata
+export const metadata = pageMetadata.home();
 
 async function getReviews(): Promise<Review[]> {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY;
@@ -63,14 +69,19 @@ export default async function Home() {
   const reviews = await getReviews();
 
   return (
-    <main>
-      <Hero />
-      <FeaturedProducts />
-      <AboutSection />
-      <MenuPreview />
-      <Testimonials reviews={reviews} />
-      <LocationHours />
-      <CTASection />
-    </main>
+    <>
+      <JsonLd data={buildRestaurantSchema()} />
+      <JsonLd data={buildLocalBusinessSchema()} />
+      <main>
+        <Hero />
+        <FeaturedProducts />
+        <AboutSection />
+        <HomeContent />
+        <MenuPreview />
+        <Testimonials reviews={reviews} />
+        <LocationHours />
+        <CTASection />
+      </main>
+    </>
   );
 }

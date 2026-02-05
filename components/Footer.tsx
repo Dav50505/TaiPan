@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,7 +14,7 @@ export default function Footer() {
               <div className="relative w-16 h-16">
                 <Image
                   src="/facicon.webp"
-                  alt="Taipan Logo"
+                  alt="Taipan Dim Sum & Bakery logo"
                   fill
                   className="object-contain"
                 />
@@ -48,6 +50,16 @@ export default function Footer() {
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-amber-400 transition-colors">
                   About
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>

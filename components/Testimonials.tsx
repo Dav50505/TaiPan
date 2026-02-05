@@ -90,7 +90,7 @@ export default function Testimonials({ reviews = fallbackReviews }: Testimonials
                 <div className="relative w-16 h-16 rounded-full overflow-hidden">
                   <Image
                     src={currentReview.profilePhoto}
-                    alt={currentReview.author}
+                    alt={`${currentReview.author} - Taipan Dim Sum customer review`}
                     fill
                     className="object-cover"
                   />
